@@ -26,18 +26,23 @@ namespace Reportes
             //configuración del doc pdf
             //CONFIG PARA REPORT
             string rutaPDF = "Reporte_Productos.pdf";//name doc
+                                                     //config nuevo documento PDF
+          
+       
+
             //config new document pdf
-            PdfDocument pdfCoc = new PdfDocument(new PdfWriter(rutaPDF));
+            PdfDocument pdfDoc = new PdfDocument(new PdfWriter(rutaPDF));
+            Document doc = new Document(pdfDoc);
 
             //Diseño pdf
             try {
                 //gener table datos bd
                 Table tabla = new Table(4);//cantidad de columnas que tiene la tabla add id
                 //encabezados
-                tabla.AddCell(new Cell().Add(new Paragraph("ID")));
-                tabla.AddCell(new Cell().Add(new Paragraph("NAME")));
-                tabla.AddCell(new Cell().Add(new Paragraph("COST")));
-                tabla.AddCell(new Cell().Add(new Paragraph("CANT")));
+                tabla.AddCell(new Cell().Add(new Paragraph("ID")).SetBackgroundColor(ColorConstants.GRAY));
+                tabla.AddCell(new Cell().Add(new Paragraph("NAME")).SetBackgroundColor(ColorConstants.GRAY));
+                tabla.AddCell(new Cell().Add(new Paragraph("COST")).SetBackgroundColor(ColorConstants.GRAY));
+                tabla.AddCell(new Cell().Add(new Paragraph("CANT")).SetBackgroundColor(ColorConstants.GRAY));
 
                 //RECORRER DATOS
                 foreach (var item in contexto.Productos)
@@ -49,19 +54,36 @@ namespace Reportes
                 }
 
                 //generar titulo
-                var titulo=new Paragraph("REPORTE PRODUCTOS");
+                var titulo = new Paragraph("TITULO DEL REPORTE");
                 titulo.SetTextAlignment(TextAlignment.CENTER);
-                titulo.SetFontSize(8);
+                titulo.SetFontSize(16);
                 //dentro de la carpeta raiz del proytc crear carpeta img
                 //generar un log: ruta
-                string ruta_imagen = "../../../img/logo.png";
-                var img = new iText.Layout.Element.Image(ImageDataFactory.Create(ruta_imagen));
-                img.ScaleToFit(200,100);
-                img.SetFixedPosition(50, 750);
+                //string ruta_imagen = "../../../img/logo.png";
+                //var img = new iText.Layout.Element.Image
+                    //(ImageDataFactory.Create(ruta_imagen));
+                //img.ScaleToFit(200, 100);
+                //img.SetFixedPosition(50, 750);
+
                 //                       x,y : x=de abajo para arriba y y izquierda hacia arriba
+                //ARMADO DEL DOCUEMENTO
+                doc.Add(titulo);
+                //doc.Add(img);
+                var salto = new Paragraph("\n\n");
+                doc.Add(salto);
+                var texto = new Paragraph("Esto es una descripción de los datos a presentar en este reporte, puede haber mas información si asi lo desea");
+                doc.Add(texto);
+                doc.Add(tabla);
+
+                //CERRAMOS EL DOCUMENTO
+                doc.Close();
+                pdfDoc.Close();
 
 
-            } catch (Exception ex) { 
+
+
+            }
+            catch (Exception ex) { 
             
             }
         }
