@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Reportes</id>
+    <version>1.0.0</version>
+    <authors>Reportes</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="itext7" version="8.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\ITCA-FEPADE\Music\Proyectosvs22MN\Reportes\bin\Debug\net6.0-windows\Reportes.runtimeconfig.json" target="lib\net6.0-windows7.0\Reportes.runtimeconfig.json" />
+    <file src="C:\Users\ITCA-FEPADE\Music\Proyectosvs22MN\Reportes\bin\Debug\net6.0-windows\Reportes.dll" target="lib\net6.0-windows7.0\Reportes.dll" />
+  </files>
+</package>
