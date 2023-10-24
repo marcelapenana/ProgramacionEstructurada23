@@ -40,9 +40,9 @@ namespace Reportes
                 Table tabla = new Table(4);//cantidad de columnas que tiene la tabla add id
                 //encabezados
                 tabla.AddCell(new Cell().Add(new Paragraph("ID")).SetBackgroundColor(ColorConstants.GRAY));
-                tabla.AddCell(new Cell().Add(new Paragraph("NAME")).SetBackgroundColor(ColorConstants.GRAY));
-                tabla.AddCell(new Cell().Add(new Paragraph("COST")).SetBackgroundColor(ColorConstants.GRAY));
-                tabla.AddCell(new Cell().Add(new Paragraph("CANT")).SetBackgroundColor(ColorConstants.GRAY));
+                tabla.AddCell(new Cell().Add(new Paragraph(" NOMBRE PRODUCTO")).SetBackgroundColor(ColorConstants.GRAY));
+                tabla.AddCell(new Cell().Add(new Paragraph(" COSTO PRODUCTO")).SetBackgroundColor(ColorConstants.GRAY));
+                tabla.AddCell(new Cell().Add(new Paragraph(" CANTIDAD")).SetBackgroundColor(ColorConstants.GRAY));
 
                 //RECORRER DATOS
                 foreach (var item in contexto.Productos)
