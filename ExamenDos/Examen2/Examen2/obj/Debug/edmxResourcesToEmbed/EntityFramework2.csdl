@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="diferido_exa22" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="notasEstudiantes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="carnet_estudiante" Type="Int32" />
+    <Property Name="nombre_completo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_materia" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="nota_materia" Type="Single" />
+  </EntityType>
+  <EntityContainer Name="diferido_exa2Entities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="notasEstudiantes" EntityType="Self.notasEstudiantes" />
+  </EntityContainer>
+</Schema>

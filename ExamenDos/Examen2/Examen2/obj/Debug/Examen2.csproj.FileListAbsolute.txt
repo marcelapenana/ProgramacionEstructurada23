@@ -1,0 +1,17 @@
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\bin\Debug\Examen2.exe.config
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\bin\Debug\Examen2.exe
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\bin\Debug\Examen2.pdb
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.csproj.AssemblyReference.cache
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.Form1.resources
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.Properties.Resources.resources
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.csproj.GenerateResource.cache
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.exe
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.pdb
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.Form2.resources
+C:\Users\Usuario\Videos\PROGRAMACIÓN ESTRUCTURADA\Examen2\Examen2\obj\Debug\Examen2.csproj.CopyComplete

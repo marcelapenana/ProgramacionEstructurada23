@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="diferido_exa2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="notasEstudiantes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="carnet_estudiante" Type="int" />
+    <Property Name="nombre_completo" Type="varchar" MaxLength="200" />
+    <Property Name="nombre_materia" Type="varchar" MaxLength="200" />
+    <Property Name="nota_materia" Type="float" />
+  </EntityType>
+  <EntityContainer Name="diferido_exa2ModelStoreContainer">
+    <EntitySet Name="notasEstudiantes" EntityType="Self.notasEstudiantes" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

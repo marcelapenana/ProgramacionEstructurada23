@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="diferido_exa2ModelStoreContainer" CdmEntityContainer="diferido_exa2Entities">
+    <EntitySetMapping Name="notasEstudiantes">
+      <EntityTypeMapping TypeName="diferido_exa2Model.notasEstudiantes">
+        <MappingFragment StoreEntitySet="notasEstudiantes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="carnet_estudiante" ColumnName="carnet_estudiante" />
+          <ScalarProperty Name="nombre_completo" ColumnName="nombre_completo" />
+          <ScalarProperty Name="nombre_materia" ColumnName="nombre_materia" />
+          <ScalarProperty Name="nota_materia" ColumnName="nota_materia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
